@@ -118,22 +118,21 @@ section h2 {
   padding: 10px;
   width: 100px;
   height: 100px;
-  background-color: #0bbea0;
+  background-color: red;
   transition: background-color 200ms ease-in-out;
-  transition: color 200ms ease-in-out;
 }
 
 .animacion:hover {
-  background-color: red;
-  color: #fff;
+  background-color: blue;
 }
 
 .mover {
   width: 100px;
   height: 100px;
-  background-color: blue;
+  background-color: green;
   position: relative;
-  animation: moverIzqADer 5s linear infinite;
+  border-radius: 50%;
+  animation: moverIzqADer 2s infinite;
 }
 
 @keyframes moverIzqADer {
@@ -141,7 +140,7 @@ section h2 {
     left: 0;
   }
   50% {
-    left: calc(100% - 100px);
+    left: calc(40% - 100px);
   }
   100% {
     left: 0;
