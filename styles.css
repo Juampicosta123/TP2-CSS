@@ -1,0 +1,149 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: rgb(88, 88, 88);
+  color: #fff;
+  padding: 2px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 18px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+section h2 {
+  font-size: 18px;
+  border-bottom: 2px solid #555555;
+  padding: 10px;
+}
+
+.section-cita p {
+  font-size: 16px;
+  text-wrap: pretty;
+  text-decoration: underline;
+}
+
+.section-cita blockquote {
+  font-size: 13px;
+  padding: 5px;
+  font-style: italic;
+  background-color: #e7e7e7;
+  color: #808080;
+  border-left: 3px solid #adadad;
+  margin: 0;
+}
+
+.section-box div {
+  padding: 1px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 8px;
+}
+
+.section-box div:nth-child(2) {
+  background-color: #f3f3f3;
+  border: 1px solid;
+}
+
+.section-box div:nth-child(3) {
+  background-color: #ffbf9b;
+  border: 2px solid;
+}
+
+.section-box p {
+  font-size: 13px;
+}
+
+.relative {
+  background-color: #befffaaf;
+  padding: 1px 10px;
+  font-size: 13px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.absolute {
+  position: absolute;
+  background-color: #0bbea0;
+  border-radius: 10px;
+  padding: 1px 10px;
+  font-size: 13px;
+  bottom: -20px;
+  right: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #bc93ff;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 8px;
+}
+
+.grid-item {
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: #1e7aa5;
+  color: #fff;
+}
+
+.animations-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.animacion {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: #0bbea0;
+  transition: background-color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+}
+
+.animacion:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.mover {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: relative;
+  animation: moverIzqADer 5s linear infinite;
+}
+
+@keyframes moverIzqADer {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 100px);
+  }
+  100% {
+    left: 0;
+  }
+}
