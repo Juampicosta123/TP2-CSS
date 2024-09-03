@@ -92,6 +92,10 @@ section h2 {
   body {
     background-color: #bc93ff;
   }
+
+  header h1 {
+    font-size: 14px;
+  }
 }
 
 .grid-container {
